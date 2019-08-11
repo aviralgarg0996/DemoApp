@@ -1,9 +1,13 @@
-import { GET_DATA_START, GET_DATA_SUCCESS } from "./types";
+import { GET_DATA_SUCCESS, RESET_STATE } from "./types";
 
 export const loadUserData=(data) => {
-    console.log("datata",data)
     return {
         type: GET_DATA_SUCCESS,
         payload: data
+    }
+}
+export const resetData=()=>{
+    return{
+        type:RESET_STATE
     }
 }
